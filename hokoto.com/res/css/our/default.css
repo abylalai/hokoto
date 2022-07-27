@@ -1,0 +1,73 @@
+/**
+    default styles
+*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, li{
+    list-style:none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.container{
+    width:600px;
+    margin:0 auto;
+}
+
+header.header{
+    background:#557dc2;
+}
+
+header.header .header-right .header-logo{
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    font-size:1.3em;
+}
+
+header.header .header-right .header-logo:hover{
+    padding-top:3px;
+    border-bottom: 3px solid #fff;
+    animation: logoPaintBottom 0.5s;
+}
+
+@keyframes logoPaintBottom {
+    from {width:0%;}
+    to {width:100%;}
+}
+
+header.header .header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 58px;
+    color:#fff;
+}
+
+header.header .header-left-not-right-ul{
+    display:flex;
+    align-items: center;
+}
+
+header.header .header-left-not-right-ul>li a{
+    margin-right:6px;
+    padding-top: 1px;
+    border-radius: 25px;
+    padding: 5px 12px;
+    border:1px solid #fff;
+    color:#fff;
+}
+header.header .header-left-not-right-ul>li a:hover{
+    border-color: silver;
+}
+
+header.header .header-left-not-right-ul>li.header-left-not-right-ul-login-btn a{
+    margin-right: 0px;
+}
